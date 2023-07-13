@@ -1,0 +1,384 @@
+{
+  "id": "bed91caf-dff1-4490-b6c2-f22a7d5ebf7e",
+  "version": "2.0",
+  "name": "employbot",
+  "url": "https://fr.indeed.com/",
+  "tests": [{
+    "id": "dfac114c-3a0a-4350-894a-fe236886fa09",
+    "name": "",
+    "commands": [{
+      "id": "d34836f1-9ecc-4968-b21f-915597d477e2",
+      "comment": "",
+      "command": "open",
+      "target": "https://fr.indeed.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59b21e90-28e9-4db9-a38a-01377754d8f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca92a5d7-e248-4819-a3f6-ea58909c7b94",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input-what",
+      "targets": [
+        ["id=text-input-what", "id"],
+        ["name=q", "name"],
+        ["css=#text-input-what", "css:finder"],
+        ["xpath=//input[@id='text-input-what']", "xpath:attributes"],
+        ["xpath=//form[@id='jobsearch']/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "devops"
+    }, {
+      "id": "85c69d46-3286-42b0-a0ee-bec91339c5fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.yosegi-InlineWhatWhere-what .icl-TextInput",
+      "targets": [
+        ["css=.yosegi-InlineWhatWhere-what .icl-TextInput", "css:finder"],
+        ["xpath=//form[@id='jobsearch']/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae4325b8-22e1-4520-9c9b-17f6c1dc0998",
+      "comment": "",
+      "command": "click",
+      "target": "css=.yosegi-InlineWhatWhere-where .icl-TextInput",
+      "targets": [
+        ["css=.yosegi-InlineWhatWhere-where .icl-TextInput", "css:finder"],
+        ["xpath=//form[@id='jobsearch']/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99513a95-9cc8-4df0-b2ab-ab0aab714939",
+      "comment": "",
+      "command": "click",
+      "target": "id=text-input-where",
+      "targets": [
+        ["id=text-input-where", "id"],
+        ["name=l", "name"],
+        ["css=#text-input-where", "css:finder"],
+        ["xpath=//input[@id='text-input-where']", "xpath:attributes"],
+        ["xpath=//form[@id='jobsearch']/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "502144cb-e9ec-4b4c-8ad6-812e7e6cc1cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=text-input-where",
+      "targets": [
+        ["id=text-input-where", "id"],
+        ["name=l", "name"],
+        ["css=#text-input-where", "css:finder"],
+        ["xpath=//input[@id='text-input-where']", "xpath:attributes"],
+        ["xpath=//form[@id='jobsearch']/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "lorien"
+    }, {
+      "id": "0bf9e78d-f60d-47b6-aa2f-65c2a6bd07d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#text-input-where-suggestion-list-selected b",
+      "targets": [
+        ["css=#text-input-where-suggestion-list-selected b", "css:finder"],
+        ["xpath=//li[@id='text-input-where-suggestion-list-selected']/span/span/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'t (56)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5b8d903-4e40-4971-974d-490157f66849",
+      "comment": "",
+      "command": "click",
+      "target": "css=.yosegi-InlineWhatWhere-primaryButton",
+      "targets": [
+        ["css=.yosegi-InlineWhatWhere-primaryButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='jobsearch']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Rechercher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84ee50c4-bbe1-42f3-b5ed-756702baa68f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-yi9ndv",
+      "targets": [
+        ["css=.css-yi9ndv", "css:finder"],
+        ["xpath=(//button[@type='button'])[29]", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-desktopserpjapopup']/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[3]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df120171-89ed-41d0-be30-021013255d93",
+      "comment": "",
+      "command": "click",
+      "target": "id=sj_91251b600abd20df",
+      "targets": [
+        ["id=sj_91251b600abd20df", "id"],
+        ["linkText=Ingénieur DevOps (H/F) - POEI", "linkText"],
+        ["css=#sj_91251b600abd20df", "css:finder"],
+        ["xpath=//a[@id='sj_91251b600abd20df']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pagead/clk?mo=r&ad=-6NYlbfkN0Cy5VedT9Ao5s13i2Vyons0L7ybZue0flb2bX4FPtUH1L4558-BSfQUy_gdnhijiE9oxT-5sV_StcR2F5xvLX7uYUis5sOrOnRO-dXj9y9J6U4eNroMZuiHpK-fSYHsioqZXc5-kCFkT5ZhbhCObfIvbehn5NEdSF6ZaoKw8lK6q7ViTu5GXDk5nvOWfvN6BsjTrNzimx-ldZYIikpzfWyMbhkR_O4ckdPMiFnbe0XyEom8-PnfmOe8Q56uxKDEtAZmLCZNZZmWrhZkpf3hVcYlKaKAW7csBou8-o_B2vcbQT7fxcvrIbLDCpyVKscDJffaKu7xWmrvSk2W0tEvsPOTT-LJk0jrcenoD95glWOOUzfFJ5cpXsePzNPHt3Xg-w9yWbh5T2SJOBTrbnDndodaMsdIpMp8QaUKk-gV7b1sCW_F42fu2cF3vhQKl2nG5ghTSqNIiNrplFPTbvlbOVgTYh-1ANlUOkpjVCuoaNgZuWekTIBCvARScL4rvltMuK5-4VcQZMUHJXkb7ZvXeW3u1SntH6RLU84=&xkcb=SoCv-_M3NnWik5QFgx0LbzkdCdPP&p=0&fvj=1&vjs=3&tk=1h57fba5jkj9d801&jsa=9683')]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ingénieur DevOps (H/F) - POEI')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9451fad3-9ede-4e85-a02a-ed9c7cd5e303",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_b87d2d97a8cd6bc9",
+      "targets": [
+        ["id=job_b87d2d97a8cd6bc9", "id"],
+        ["linkText=Administrateur Systèmes et Réseaux H/F", "linkText"],
+        ["css=#job_b87d2d97a8cd6bc9", "css:finder"],
+        ["xpath=//a[@id='job_b87d2d97a8cd6bc9']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[2]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rc/clk?jk=b87d2d97a8cd6bc9&fccid=dd616958bd9ddc12&vjs=3')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Administrateur Systèmes et Réseaux H/F')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89a0d545-672a-4381-9ec7-d40fd522b02a",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_2c14f13e2c0d2f2f",
+      "targets": [
+        ["id=job_2c14f13e2c0d2f2f", "id"],
+        ["linkText=Administrateur Système Microsoft et Réseau déploiement cloud H/F", "linkText"],
+        ["css=#job_2c14f13e2c0d2f2f", "css:finder"],
+        ["xpath=//a[@id='job_2c14f13e2c0d2f2f']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[3]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"/company/RECRUT'RH/jobs/Administrateur-Syst%C3%A8mes-Et-R%C3%A9seaux-2c14f13e2c0d2f2f?fccid=cd384d30fd51c450&vjs=3\")]", "xpath:href"],
+        ["xpath=//li[3]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Administrateur Système Microsoft et Réseau déploiement cloud H/F')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2305147f-dc53-40e6-902b-dbf468553549",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_231206def312d672",
+      "targets": [
+        ["id=job_231206def312d672", "id"],
+        ["linkText=Administrateur systèmes F/H", "linkText"],
+        ["css=#job_231206def312d672", "css:finder"],
+        ["xpath=//a[@id='job_231206def312d672']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[4]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rc/clk?jk=231206def312d672&fccid=7ad3c630bb040940&vjs=3')]", "xpath:href"],
+        ["xpath=//li[4]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Administrateur systèmes F/H')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76e67d7f-1f1f-4f5b-a9e0-46cc233462aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_e2b829ccc4341067",
+      "targets": [
+        ["id=job_e2b829ccc4341067", "id"],
+        ["linkText=contrat de professionnalisation Developpeur Web H/F", "linkText"],
+        ["css=#job_e2b829ccc4341067", "css:finder"],
+        ["xpath=//a[@id='job_e2b829ccc4341067']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[5]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/company/Selltim/jobs/D%C3%A9veloppeur-Web-e2b829ccc4341067?fccid=1caa2479500fa130&vjs=3')]", "xpath:href"],
+        ["xpath=//li[5]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'contrat de professionnalisation Developpeur Web H/F')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e97b7c1c-7dfa-46cc-b311-86c7e21ded10",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_d94f755bcd0d88b1",
+      "targets": [
+        ["id=job_d94f755bcd0d88b1", "id"],
+        ["linkText=Administrateur systèmes et réseaux (H/F)", "linkText"],
+        ["css=#job_d94f755bcd0d88b1", "css:finder"],
+        ["xpath=//a[@id='job_d94f755bcd0d88b1']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[7]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rc/clk?jk=d94f755bcd0d88b1&fccid=0deabe211f63c728&vjs=3')]", "xpath:href"],
+        ["xpath=//li[7]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Administrateur systèmes et réseaux (H/F)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dc230f8-b7e2-42f1-8ba3-9120e0a5d3cf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=jobActionButton-d94f755bcd0d88b1",
+      "targets": [
+        ["id=jobActionButton-d94f755bcd0d88b1", "id"],
+        ["css=#jobActionButton-d94f755bcd0d88b1", "css:finder"],
+        ["xpath=//button[@id='jobActionButton-d94f755bcd0d88b1']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[7]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//li[7]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48cf156a-8a5c-4b1d-88be-616026acc7be",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='jobDescriptionText']/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Rattaché(e) au Responsable Système, vous participerez à la préparation et à la mise en oeuvre de projet d’installation et de déploiement (serveurs et postes de travail) chez les clients. Vous interviendrez sur les environnements techniques suivants:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8bf78c0-0b01-42b4-94fc-2723908328f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_d54e1a9b0efbc994",
+      "targets": [
+        ["id=job_d54e1a9b0efbc994", "id"],
+        ["linkText=ALTERNANCE - Ingénieur DevOps - F/H", "linkText"],
+        ["css=#job_d54e1a9b0efbc994", "css:finder"],
+        ["xpath=//a[@id='job_d54e1a9b0efbc994']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[8]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rc/clk?jk=d54e1a9b0efbc994&fccid=8467fe4682167898&vjs=3')]", "xpath:href"],
+        ["xpath=//li[8]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ALTERNANCE - Ingénieur DevOps - F/H')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eae767b3-580f-4320-87d9-eea5037e7da4",
+      "comment": "",
+      "command": "click",
+      "target": "id=jobDetailsSection",
+      "targets": [
+        ["id=jobDetailsSection", "id"],
+        ["css=#jobDetailsSection", "css:finder"],
+        ["xpath=//div[@id='jobDetailsSection']", "xpath:attributes"],
+        ["xpath=//div[@id='jobsearch-ViewjobPaneWrapper']/div/div/div/div[2]/div/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6197c2c-0de7-4339-807e-0cf7ce904e16",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_c89ee766442ff5cb",
+      "targets": [
+        ["id=job_c89ee766442ff5cb", "id"],
+        ["css=#job_c89ee766442ff5cb", "css:finder"],
+        ["xpath=//a[@id='job_c89ee766442ff5cb']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[9]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rc/clk?jk=c89ee766442ff5cb&fccid=57dcfcf9cd559fcc&vjs=3')]", "xpath:href"],
+        ["xpath=//li[9]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1d36cae-e7ed-4334-95e3-7c58f0fe3b22",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_c6bc17170fd10179",
+      "targets": [
+        ["id=job_c6bc17170fd10179", "id"],
+        ["linkText=Intégrateur Systèmes et Applicatifs F/H (Lorient)", "linkText"],
+        ["css=#job_c6bc17170fd10179", "css:finder"],
+        ["xpath=//a[@id='job_c6bc17170fd10179']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[10]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rc/clk?jk=c6bc17170fd10179&fccid=57dcfcf9cd559fcc&vjs=3')]", "xpath:href"],
+        ["xpath=//li[10]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Intégrateur Systèmes et Applicatifs F/H (Lorient)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79a3d92f-2eb9-42f8-a075-1139b2dcca26",
+      "comment": "",
+      "command": "click",
+      "target": "id=jobDetailsSection",
+      "targets": [
+        ["id=jobDetailsSection", "id"],
+        ["css=#jobDetailsSection", "css:finder"],
+        ["xpath=//div[@id='jobDetailsSection']", "xpath:attributes"],
+        ["xpath=//div[@id='jobsearch-ViewjobPaneWrapper']/div/div/div/div[2]/div/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc513a64-7910-4b74-a0a4-3605d7fcb681",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_50ca89e2e2ed144f",
+      "targets": [
+        ["id=job_50ca89e2e2ed144f", "id"],
+        ["linkText=Ingénieur Réseaux et Systèmes (H/F)", "linkText"],
+        ["css=#job_50ca89e2e2ed144f", "css:finder"],
+        ["xpath=//a[@id='job_50ca89e2e2ed144f']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[11]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rc/clk?jk=50ca89e2e2ed144f&fccid=f452ff89851e4578&vjs=3')]", "xpath:href"],
+        ["xpath=//li[11]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ingénieur Réseaux et Systèmes (H/F)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d872407-1eab-42dc-a87e-2dc5b367bc8a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2933.700439453125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ce56d67-8c83-4f23-8b4f-a11e177c503d",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > div > p:nth-child(3)",
+      "targets": [
+        ["css=div:nth-child(1) > div > p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='jobDescriptionText']/div/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Dans le cadre du développement de nos activités à Lorient, nous recherchons notre futur Ingénieur Réseaux et Systèmes (H/F). Chargé l’assistance technique d’ingénierie de réseaux et systèmes informatiques, vous assurerez la construction de l’infrastructure, la configuration et de la gestion des systèmes.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92da60ad-7646-486d-9983-42a49e5a1c28",
+      "comment": "",
+      "command": "click",
+      "target": "id=job_5bf0b8f1bf1c5fa3",
+      "targets": [
+        ["id=job_5bf0b8f1bf1c5fa3", "id"],
+        ["linkText=Administrateur Système et réseaux F/H", "linkText"],
+        ["css=#job_5bf0b8f1bf1c5fa3", "css:finder"],
+        ["xpath=//a[@id='job_5bf0b8f1bf1c5fa3']", "xpath:attributes"],
+        ["xpath=//div[@id='mosaic-provider-jobcards']/ul/li[13]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rc/clk?jk=5bf0b8f1bf1c5fa3&fccid=1c832ad93eb5f953&vjs=3')]", "xpath:href"],
+        ["xpath=//li[13]/div/div/div/div/div/table/tbody/tr/td/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Administrateur Système et réseaux F/H')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3dd81d9e-e5c5-4dc3-be88-8912cc961961",
+    "name": "bot_indeed",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "5d09804f-0471-42c2-bc4e-736c147cffe2",
+    "name": "",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dfac114c-3a0a-4350-894a-fe236886fa09"]
+  }],
+  "urls": ["https://fr.indeed.com/"],
+  "plugins": []
+}

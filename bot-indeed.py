@@ -19,7 +19,10 @@ driver = webdriver.Edge(options=options)
 
 # Charger la page avec le formulaire
 driver.get('https://fr.indeed.com')
-
+try:    
+    driver.find_element(By.ID,"onetrust-reject-all-handler").click()
+except:
+    pass
 # Rechercher l'élément "Quoi" et entrer la valeur "developpeur aws"
 quoi_input = driver.find_element(by=By.ID, value="text-input-what")
 quoi_input.send_keys('developpeur aws')
