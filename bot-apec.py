@@ -5,27 +5,34 @@ from selenium.webdriver.common.by import By    #import webdriver
 from selenium.webdriver.common.keys import Keys #import keys
 from selenium.webdriver.common.action_chains import ActionChains #import action_chains  
 import time #import time            
-
+from highlight import highlight_element
 #open apec website      
 driver = wd.Chrome()    
 driver.get("https://www.apec.fr/candidat.html") #open apec website  
 
 #parse apec website with selenium       
-time.sleep(5) #wait 5 seconds       
-driver.find_element(By.NAME,"keywords").send_keys("devops") #send keywords  
-time.sleep(5) #wait 5 seconds   
-where_input = driver.find_element(By.NAME,"locationOffresDisplay") #send where
-where_input.send_keys("nantes") #click login button     
-where_input.send_keys(Keys.RETURN)  
-#click button onetrust-reject-all-handler if exist
+time.sleep(5) #wait 5 seconds
 try:    
     driver.find_element(By.ID,"onetrust-accept-btn-handler").click()
 except:
     pass
+time.sleep(5) #wait 5 seconds
+employ_input = driver.find_element(By.NAME,"keywords")
+employ_input.send_keys("devops") #send keywords  
+time.sleep(5) #wait 5 seconds   
+employ_input.send_keys(Keys.TAB)  
+
+where_input = driver.find_element(By.NAME,"locationOffresDisplay") #send where
+time.sleep(5) #wait 5 seconds   
+
+where_input.send_keys("nantes") #click login button     
+where_input.send_keys(Keys.RETURN)  
+#click button onetrust-reject-all-handler if exist
 
 #find button type="submit"
-# button = driver.find_element(By.CSS_SELECTOR,"button[type='submit']")            
-# button.click()
+button = driver.find_element(By.CLASS_NAME,"btn-search") 
+highlight_element(button)           
+button.click()
 # driver.find_element_by_id("username").send_keys("username") #enter username
 # driver.find_element_by_id("password").send_keys("password") #enter password
 time.sleep(5) #wait 5 seconds   
