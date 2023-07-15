@@ -1,16 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.edge.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
 
 from highlight import highlight_element
 
 # Chemin vers le fichier exécutable du navigateur
 # Assurez-vous d'avoir téléchargé le pilote approprié pour votre navigateur
-driver_path = 'C:\\Users\\aurel\\Downloads\\edgedriver_win32\\msedgedriver.exe'
 options = webdriver.EdgeOptions()
 options.add_argument("--disable-cookies")  # Désactiver les cookies
 
