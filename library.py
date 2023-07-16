@@ -1,4 +1,4 @@
-from selenium import webdriver
+"""miscellaneous functions"""
 from selenium.webdriver.common.by import By
 
 def reject_cookies(driver):
