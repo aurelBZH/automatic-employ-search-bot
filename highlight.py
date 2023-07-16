@@ -1,8 +1,16 @@
-from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import ScriptTimeoutException
 
 def highlight_element(element):
+    """
+    Highlight the given element by applying a temporary highlight style.
+    
+    Parameters:
+    - element: The element to be highlighted.
+    
+    Returns:
+    None
+    """
     driver = element._parent
 
     # Store the original style of the element
