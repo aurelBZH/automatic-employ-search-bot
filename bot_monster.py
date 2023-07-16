@@ -60,3 +60,4 @@ for  href in list_link:
 
     description =  driver.find_element(By.CSS_SELECTOR, "div[class^='descriptionstyles__DescriptionBody-']").text
     # new JobListing(title=title,salary=salary,)
+

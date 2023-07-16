@@ -62,3 +62,4 @@ for element in elements:
 
 # Fermer le navigateur
 # driver.quit()
+

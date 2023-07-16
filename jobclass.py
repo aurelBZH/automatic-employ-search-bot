@@ -47,3 +47,4 @@ class JobListing:
             The instance of the class created from the dictionary.
         """
         return cls(**data)
+    
