@@ -1,3 +1,4 @@
+"""module creating the database"""
 import sqlite3
 
 # Connexion à la base de données (le fichier sera créé s'il n'existe pas)

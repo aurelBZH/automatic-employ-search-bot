@@ -1,10 +1,10 @@
-
+"""module parsing monster website"""
+import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 from highlight import highlight_element
-import time
 from jobclass import JobListing
 
 # Chemin vers le fichier exécutable du navigateur
