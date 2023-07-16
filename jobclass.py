@@ -1,3 +1,4 @@
+"""data class for JobListing"""
 from dataclasses import dataclass, asdict
 
 @dataclass

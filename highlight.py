@@ -1,3 +1,4 @@
+"""highlight the element"""
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import ScriptTimeoutException
 

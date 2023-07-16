@@ -50,10 +50,3 @@ for link in links:
 for  href in list_link:
     driver.get(href)    
     driver.back()
-
-
-
-
-# driver.find_element_by_id("username").send_keys("username") #enter username
-# driver.find_element_by_id("password").send_keys("password") #enter password
-time.sleep(5) #wait 5 seconds   
