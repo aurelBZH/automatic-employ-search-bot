@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from highlight import highlight_element
-
+from library import reject_cookies
 # Chemin vers le fichier exécutable du navigateur
 # Assurez-vous d'avoir téléchargé le pilote approprié pour votre navigateur
 options = webdriver.EdgeOptions()
@@ -14,10 +14,7 @@ driver = webdriver.Edge(options=options)
 
 # Charger la page avec le formulaire
 driver.get('https://fr.indeed.com')
-try:    
-    driver.find_element(By.ID,"onetrust-reject-all-handler").click()
-except:
-    pass
+reject_cookies(driver)
 # Rechercher l'élément "Quoi" et entrer la valeur "developpeur aws"
 quoi_input = driver.find_element(by=By.ID, value="text-input-what")
 quoi_input.send_keys('developpeur aws')

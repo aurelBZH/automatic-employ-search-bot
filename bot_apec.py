@@ -6,15 +6,13 @@ from selenium import webdriver as wd
 from selenium.webdriver.common.by import By    # import webdriver
 from selenium.webdriver.common.keys import Keys # import keys
 from highlight import highlight_element
+from library import reject_cookies
 # open apec website      
 driver = wd.Chrome()
 driver.get("https://www.apec.fr/candidat.html") # open apec website  
 # parse apec website with selenium       
 time.sleep(5) # wait 5 seconds
-try:
-    driver.find_element(By.ID,"onetrust-reject-all-handler").click()
-except:
-    pass
+reject_cookies(driver)
 time.sleep(5) # wait 5 seconds
 employ_input = driver.find_element(By.NAME,"keywords")
 employ_input.send_keys("devops") # send keywords

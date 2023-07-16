@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-
+from library import reject_cookies
 from highlight import highlight_element
 from jobclass import JobListing
 
@@ -19,10 +19,7 @@ driver = webdriver.Edge(options=options)
 driver.get('https://www.monster.fr')
 time.sleep(5) #wait 5 seconds   
 
-try:    
-    driver.find_element(By.ID,"onetrust-reject-all-handler").click()
-except:
-    pass
+reject_cookies(driver)
 
 job_input = driver.find_element(By.NAME,"q")
 job_input.send_keys("devops")
