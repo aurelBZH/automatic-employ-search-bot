@@ -1,6 +1,6 @@
 """highlight the element"""
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.common.exceptions import ScriptTimeoutException
+from selenium.common import exceptions
 
 def highlight_element(element):
     """
@@ -27,7 +27,7 @@ def highlight_element(element):
         # Perform an action to remove the highlight and restore the original style
         ActionChains(driver).move_to_element(element).perform()
 
-    except ScriptTimeoutException:
+    except exceptions.TimeoutException:
         pass
 
     finally:
