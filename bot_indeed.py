@@ -4,6 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from highlight import highlight_element
 from library import reject_cookies
+import time
 # Chemin vers le fichier exécutable du navigateur
 # Assurez-vous d'avoir téléchargé le pilote approprié pour votre navigateur
 options = webdriver.EdgeOptions()
@@ -14,7 +15,9 @@ driver = webdriver.Edge(options=options)
 
 # Charger la page avec le formulaire
 driver.get('https://fr.indeed.com')
+time.sleep(5) #wait 5 seconds
 reject_cookies(driver)
+time.sleep(5) #wait 5 seconds
 # Rechercher l'élément "Quoi" et entrer la valeur "developpeur aws"
 quoi_input = driver.find_element(by=By.ID, value="text-input-what")
 quoi_input.send_keys('developpeur aws')
@@ -38,18 +41,23 @@ ou_input.send_keys('Nantes')
 # Vous pouvez ajuster le délai d'attente en fonction de la vitesse de votre connexion Internet
 driver.implicitly_wait(100)
 ou_input.send_keys(Keys.RETURN) 
-elements = driver.find_elements(By.CLASS_NAME, "cardOutline")
+conteneur = driver.find_element(By.CLASS_NAME, "jobsearch-LeftPane")
 
 # Iterate over each element
-elements = driver.find_elements(By.CLASS_NAME, "cardOutline")
 
+links = conteneur.find_elements(By.TAG_NAME, "a")
+time.sleep(5) #wait 5 seconds
+list_link=[]
+for link in links:
+    href = link.get_attribute("href")
+    list_link.append(href)
+job_listing = []
 # Iterate over each element
-for element in elements:
+for href in list_link:
     # Scroll the page to bring the element into view
-    print(element)
-    highlight_element(element)
-    element.click()
-    print(driver.find_element(By.CLASS_NAME,"jobsearch-JobInfoHeader-title").text)
+    driver.get(href)
+    title = driver.find_element(By.CLASS_NAME,"jobsearch-JobInfoHeader-title").text
+
 
     # Print the content
     # print(content)
