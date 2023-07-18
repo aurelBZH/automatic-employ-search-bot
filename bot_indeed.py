@@ -1,10 +1,9 @@
 """module parsing indeed website"""
+import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from highlight import highlight_element
 from library import reject_cookies
-import time
 # Chemin vers le fichier exécutable du navigateur
 # Assurez-vous d'avoir téléchargé le pilote approprié pour votre navigateur
 options = webdriver.EdgeOptions()

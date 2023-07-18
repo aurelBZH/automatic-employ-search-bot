@@ -4,7 +4,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from library import reject_cookies
-from highlight import highlight_element
 from jobclass import JobListing
 
 # Chemin vers le fichier exécutable du navigateur
@@ -60,7 +59,7 @@ for  href in list_link:
     employment_type =  driver.find_element(By.CSS_SELECTOR,"[data-test-id='svx-jobview-employmenttype']").text
     description =  driver.find_element(By.CSS_SELECTOR, "div[class^='descriptionstyles__DescriptionBody-']").text
     city =  driver.find_element(By.CSS_SELECTOR,"[data-test-id='svx-jobview-location']").text
-    joblist.append(JobListing(title=title,salary=salary,employment_type=employment_type,description=description,city=city,responded=False,response=""))
+    joblist.append(JobListing(title=title,salary=salary,type=employment_type,description=description,city=city,responded=False,response="",publicationdate=date))
 
 #append job to database 
 for job in joblist:
