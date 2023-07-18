@@ -57,4 +57,11 @@ for  href in list_link:
 
     description =  driver.find_element(By.CSS_SELECTOR, "div[class^='descriptionstyles__DescriptionBody-']").text
     # new JobListing(title=title,salary=salary,)
+    employment_type =  driver.find_element(By.CSS_SELECTOR,"[data-test-id='svx-jobview-employmenttype']").text
+    description =  driver.find_element(By.CSS_SELECTOR, "div[class^='descriptionstyles__DescriptionBody-']").text
+    city =  driver.find_element(By.CSS_SELECTOR,"[data-test-id='svx-jobview-location']").text
+    joblist.append(JobListing(title=title,salary=salary,employment_type=employment_type,description=description,city=city,responded=False,response=""))
 
+#append job to database 
+for job in joblist:
+    job.asdict()
