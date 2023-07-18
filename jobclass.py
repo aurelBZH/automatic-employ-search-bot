@@ -3,14 +3,15 @@ from dataclasses import dataclass, asdict
 
 @dataclass
 class JobListing:
-    title: str
-    salary: str
-    type: str
-    city: str
-    publicationdate: str
-    description: str
-    responded: bool
-    response: str
+    def __init__(self, title: str, salary: str, type: str, city: str, publicationdate: str, description: str, responded: bool, response: str):
+        self.title = title
+        self.salary = salary
+        self.type = type
+        self.city = city
+        self.publicationdate = publicationdate
+        self.description = description
+        self.responded = responded
+        self.response = response
     
     def __str__(self):
         """
@@ -23,8 +24,8 @@ class JobListing:
             str: A formatted string containing the title, salary, type, city,
                  description, responded, and response attributes of the object.
         """
-        return f"Title: {self.title}\nSalary: {self.salary} \ntype: {self.type}\nCity: {self.city}\nDescription: {self.description}\nResponded: {self.responded}\nResponse: {self.response}"
-    
+        return f"Title: {self.title}\nSalary: {self.salary}\nType: {self.type}\nCity: {self.city}\nPublication Date: {self.publicationdate}\nDescription: {self.description}\nResponded: {self.responded}\nResponse: {self.response}"
+
     def to_dict(self):
         """
         Converts the object to a dictionary representation.
