@@ -4,7 +4,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from library import reject_cookies
-from highlight import highlight_element
 from jobclass import JobListing
 
 # Chemin vers le fichier exécutable du navigateur
