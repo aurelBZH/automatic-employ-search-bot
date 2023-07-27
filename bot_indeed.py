@@ -54,6 +54,7 @@ job_listing = []
 # Iterate over each element
 for href in list_link:
     # Scroll the page to bring the element into view
+    time.sleep(2)
     driver.get(href)
     title = driver.find_element(By.CLASS_NAME,"jobsearch-JobInfoHeader-title").text
 
@@ -67,3 +68,14 @@ for href in list_link:
 # Fermer le navigateur
 # driver.quit()
 
+def connect(driver):
+    email_field = driver.find_element(By.NAME, '__email')
+    email_field.send_keys('aurel.beliard@gmail.com')
+    email_field.send_keys(Keys.RETURN)
+    driver.find_element(By.CLASS_NAME, 'dd-privacy-allow').click()
+    time.sleep(5)
+    driver.find_element(By.ID, 'auth-page-google-password-fallback').click()
+    passwd = driver.find_element(By.ID, "auth-page-google-password-fallback")
+    passwd.send_keys('bcabca12456')
+    passwd.send_keys(Keys.RETURN)
+    
