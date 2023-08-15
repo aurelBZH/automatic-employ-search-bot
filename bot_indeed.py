@@ -6,11 +6,11 @@ from selenium.webdriver.common.by import By
 from library import reject_cookies
 # Chemin vers le fichier exécutable du navigateur
 # Assurez-vous d'avoir téléchargé le pilote approprié pour votre navigateur
-options = webdriver.EdgeOptions()
+options = webdriver.ChromeOptions()
 options.add_argument("--disable-cookies")  # Désactiver les cookies
 
 # Initialisation du navigateur
-driver = webdriver.Edge(options=options)
+driver = webdriver.Chrome(options=options)
 
 # Charger la page avec le formulaire
 driver.get('https://fr.indeed.com')
